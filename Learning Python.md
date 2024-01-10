@@ -298,3 +298,118 @@ print(math.floor(2.9))
 ```
 
 ![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/0f0f9a28-c4e9-43bb-9cb9-05e32dd73d5e)
+
+## If Statements
+
+* If Statements help us to build programs that can make decisions based on some condition.
+* If conditions are true the code block specified is executed else the otherwise block of code gets executed.
+
+> Example
+
+> If it's a hot then tell
+    Its a hot day
+    Drink plenty of water
+ 
+
+> Otherwise if it's cold
+    It's a cold day
+    Wear warm clothes
+
+ 
+> Otherwise
+    It's a lovely day
+
+```
+is_hot = False
+is_cold = True
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/c748026d-f30d-4505-9630-239532ad2a11)
+
+> Exercise
+Price of house is $1M
+
+> If buyer has good credit,
+    they need to put down 10%
+
+> Otherwise
+    they need to put down 20%
+
+> Print the down payment
+
+```
+#Exercise
+
+price = 1000000
+has_credit = True
+if has_credit:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print(f"Down Payment: ${down_payment}")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/c1822e64-bef2-4720-974e-8a0ec947ac58)
+
+---
+
+## Logical Operators
+
+This operator is used in situtaions with multiple conditions.
+
+* AND-To combine condition and both must be True
+* OR- To do certain things in situations where at least either of the condition is true.
+* NOT-To inverse any boolean value.
+
+```
+#If the applicant has high income AND good credit
+#Eligible for loan
+
+has_high_income = True
+has_good_credit = True
+if has_high_income and has_good_credit:
+    print("Eligible for loan")
+
+#If the applicant has high income OR good credit
+#Eligible for loan
+
+has_high_income = True
+has_good_credit = False
+if has_high_income or has_good_credit:
+    print("Eligible for loan")
+
+#If applicant has good credit and doesn't have criminal record
+#Eligible for loan
+
+has_good_credit = True
+has_criminal_record = False
+if has_good_credit and not has_criminal_record:
+    print("Eligible for loan")
+
+has_good_credit = True
+has_criminal_record = True
+if has_good_credit and not has_criminal_record:
+    print("Eligible for loan")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/020cd20b-4dc5-456b-935c-af8269e19441)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
