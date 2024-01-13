@@ -400,6 +400,100 @@ if has_good_credit and not has_criminal_record:
 ```
 ![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/020cd20b-4dc5-456b-935c-af8269e19441)
 
+## Comparison Operator
+
+* These Operators are used to compare variables with a value.
+* Greater than(>) or Greater than equal to(>=)
+* Less than(<) or Less than equal to(<=)
+* Equality or equals to(==) 
+* Not equal to(!=)
+
+> Example
+
+> If temperature is greater than 30
+    It's a hot day
+> Otherwise if it's less than 10
+    It's a cold day
+> Otherwise
+    It's neither hot nor cold
+
+```
+temperature = 35
+if temperature > 30:
+    print("It's a hot day")
+else:
+    print("It's a cold day")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/490643e8-9caf-4ff3-b500-04e6332b94ab)
+
+> Exercise
+
+>If the name is less than 3 characters long
+    name must be at least 3 characters 
+> Otherwise if it's more than 50 characters long
+    name must be maximum of 50 characters
+> Otherwise 
+    name looks good!
+
+```
+name = input(str)
+if len(name) < 3:
+    print("name must be at least 3 characters")
+elif len(name) > 50:
+    print("name must be a maximum of 50 characters")
+else:
+    print("name looks good!")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/8dc00f67-b7e9-4146-a810-f50361aee9f4)
+
+---
+
+## Weight Converter Program
+
+> Example
+
+> Convert kg or pound weight input to other units.
+
+```
+weight = int(input("Enter the weight: "))
+unit = input('(L)bs or (K)g: ')
+if unit.upper() == "L":
+    convert = weight * 0.45
+    print(f"You are {convert} kilos")
+else:
+    convert = weight / 0.45
+    print(f"You are {convert} pounds")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/0169ac17-774a-4d41-8004-25e01cde894b)
+
+---
+
+## While Loops
+
+* While loop is used to execute block of codes multiple times.
+* The code is executed until the condition is True.
+* The loop terminates when condition is Fak
+* These loops are often useful in building interactive programs and games.
+
+```
+i = 1
+while i <= 5:
+    print(i)
+    # increment i to avoid infinite loop as 1 will always be less than 5. So condition True and code will be executed.
+    i = i + 1
+print("Done")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/7af0db1a-127c-41d4-882b-93104f8c1415)
+
+```
+i = 1
+while i <= 5:
+    print('*' * i)
+    i = i + 1
+print("Done")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/a9f06c1d-ed48-4807-b68f-8fa840ae9906)
+
 
 
 
