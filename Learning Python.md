@@ -494,6 +494,72 @@ print("Done")
 ```
 ![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/a9f06c1d-ed48-4807-b68f-8fa840ae9906)
 
+## Guessing Game
+
+> Use of While loop to make a game.
+* There is a secret No. which is set to a value and that value is to be guessed.
+
+> break
+* At times when the condition is satisfied and we get the desired output but still the code gets executed as it is in the loop. So to terminate the loop break is use.
+
+> Note: In below e.g.
+We wrote else statement outside of the if loop just below the while and not if , because in case where if condition is true due to break it jumps out of loop. So the code that we write in else block will not get executed.
+
+```
+secret_number = int(input("Enter the number: "))
+guess_count = 1
+guess_limit = 3
+while guess_count <= guess_limit:
+    guess = int(input("Enter your guess: "))
+    guess_count += 1
+    if guess == secret_number:
+        print(f" {secret_number} is the right guess!")
+        break
+else:
+    print("Wrong guess")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/3a6810d0-9d84-4553-b3bf-1cf8e3793175)
+
+---
+
+## Building the Car Game
+
+> On running the program symbol must appear that asks to input a command. 
+On typing help, list of certain commands that game supports must be listed.(Start/Stop/Quit for e.g.)
+If any other commnand is given as input program must tell that it doesn't understands it.
+Also tell if the car is already stopped or started and it cannot be started again.
+
+```
+command = ""
+started = False
+while True:
+    command = input(">").lower()  # lower() function to allow only lower case
+    if command == "start":
+        if started:
+            print("Car already started")
+        else:
+            started = True
+            print("car started....")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("car stopped.")
+    elif command == "help":
+        print(""" 
+start - to start the car
+stop - to stop the car
+quit - to quit """)
+    elif command == "quit":
+        break
+    else:
+        print("I don't understand that, Sorry!")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/fb5e4e75-59bf-4c08-8b4e-8f5031877fb5)
+
+
+
 
 
 
