@@ -558,6 +558,125 @@ quit - to quit """)
 ```
 ![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/fb5e4e75-59bf-4c08-8b4e-8f5031877fb5)
 
+---
+
+## For Loops
+
+* We use for loops to iterate items of collection.
+* We define a loop variable and this variable holds one item in each iteration.
+
+> To iterate over large list of numbers we can't explicitly define each number so range function is used for that.
+> The range function can also take steps.
+
+```
+for item in 'Python':
+    print(item)
+
+# List e.g.
+for item in ['Mosh', 'John', 'Sarah']:
+    print(item)
+for item in [1, 2, 3, 4]:
+    print(item)
+
+# range
+for item in range(10):
+    print(item)
+for item in range(5, 10):
+    print(item)
+
+# Step in range function
+# item after 2 steps is listed when print 
+for item in range(5, 10, 2):
+    print(item)
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/d50e721e-5d6b-4fbb-aeee-0cdb1118713e)
+
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/d6c4a9fe-d9a9-4fee-b683-893b01b0a215)
+
+> Exercise
+Write a program to calculate total cost of all the items in shopping cart.
+
+```
+prices = [10, 20, 30]
+total = 0
+for price in prices:
+    total += price
+print(f"Total: {total}")
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/4c7b1b68-0428-4bb3-b9e1-ae5d7954c948)
+
+---
+
+## Nested Loops
+
+> Example
+To print List of co-ordinates(x , y).
+> The iteration completes for inner loop and then the control moves to outer loops.
+
+```
+for x in range(5):
+    for y in range(4):
+        print(f'({x}, {y})')
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/52be75a4-ec75-4daf-a96a-57bb13b52962)
+
+> Exercise
+Convert list of numbers to shape.
+numbers = [5,2,5,2,2]
+The values given in list defines the numbers of x's in each line of the pattern output.
+
+```
+number = [5, 2, 5, 2, 2]
+for x_count in number:
+    output = '' # to set or reset o/p variable as empty string.
+    for count in range(x_count):
+        output += 'x' # to append x to o/p variable.
+    print(output)
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/2f4761cc-4025-4caa-8812-16b4fd25385f)
+
+---
+
+## Lists
+
+> Example
+
+```
+names = ['John', 'Bob', 'Mosh', 'Sarah', 'May']
+print(names)
+
+# To access element at index
+print(f"Element at index 2: {names[2]}")
+print(f"Element at negative index -1: {names[-1]}")
+print(f"Element at negative index -2: {names[-2]}")
+
+# Colon to select range of items
+print(f"Element of range: {names[2:]}")
+print(f"Element of range: {names[2:4]}")
+print(f"Element of range: {names[:]}") # 0 will be assumed as default index
+
+# To edit list
+names = ['John', 'Bob', 'Mosh', 'Sarah', 'May']
+names[0] = 'Josh'
+print(names)
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/a7cdff9d-c70a-4855-a120-796c81cfe525)
+
+> Exercise
+To find the largest number in a list.
+
+```
+numbers = [3, 6, 2, 10, 4, 1]
+max = numbers[0] #Assume
+#compare at every iteration and if true set max to that new value.
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+```
+![image](https://github.com/Sakshi-Hardwani/Python-Notes/assets/117386798/fcc345e3-4e14-4042-ad14-9a2b11f74bdd)
+
+
 
 
 
